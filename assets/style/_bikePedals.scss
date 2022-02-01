@@ -1,0 +1,176 @@
+
+.bikePedals {
+    display: inline-block;
+    background-image: url('../img/bikePedalsSprite.svg');
+}
+//  eBIKE PEDALS POSITIONS STARTS
+.bikePedals-eBike {
+    background-position: 40px 0px;
+    position: absolute;
+    height: 47px;
+    width: 41px;
+    z-index:6;
+}
+ .bikePedals-eBike--eBike {
+    top:180px;
+    left:154px;
+ }
+
+ .bikePedals-eBike--wagon {
+    top:183px;
+    left:174px;
+ }
+
+ .bikePedals-eBike--loRider {
+    top:162px;
+    left:134px;
+ }
+
+ .bikePedals-eBike--Road {
+    top:184px;
+    left:142px;
+ }
+
+ .bikePedals-eBike--Tri {
+    top:190px;
+    left:145px;
+ }
+//  eBIKE PEDALS POSITIONS ENDS
+
+//  Wagon PEDALS POSITIONS STARTS
+.bikePedals-wagon {
+    background-position: 81px 0px;
+    position: absolute;
+    height: 60px;
+    width: 39px;
+    z-index: 6;
+}
+ .bikePedals-wagon--eBike {
+    top:180px;
+    left:153px;
+ }
+
+ .bikePedals-wagon--wagon {
+    top:182px;
+    left:173px;
+ }
+
+ .bikePedals-wagon--loRider {
+    top:160px;
+    left:132px;
+ }
+
+ .bikePedals-wagon--Road {
+    top: 184px;
+    left: 141px;
+ }
+
+ .bikePedals-wagon--Tri {
+    top: 185px;
+    left: 145px;
+ }
+//  Wagon PEDALS POSITIONS ENDS
+
+//  loRider PEDALS POSITIONS STARTS
+.bikePedals-loRider {
+    background-position: 117px 0px;
+    position: absolute;
+    height: 53px;
+    width: 34px;
+    z-index: 6;
+}
+ .bikePedals-loRider--eBike {
+    top: 181px;
+    left: 153px;
+ }
+
+ .bikePedals-loRider--wagon {
+    top:184px;
+    left:174px;
+ }
+
+ .bikePedals-loRider--loRider {
+    top:163px;
+    left:134px;
+ }
+
+ .bikePedals-loRider--Road {
+    top: 183px;
+    left: 141px;
+ }
+
+ .bikePedals-loRider--Tri {
+    top: 190px;
+    left: 145px;
+ }
+//  LoRider PEDALS POSITIONS ENDS
+
+//  loRider PEDALS POSITIONS STARTS
+.bikePedals-Road {
+    background-position: 158px 0px;
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    z-index: 6;
+}
+
+ .bikePedals-Road--eBike {
+    top: 177px;
+    left: 149px;
+ }
+
+ .bikePedals-Road--wagon {
+    top:180px;
+    left:171px;
+ }
+
+ .bikePedals-Road--loRider {
+    top: 160px;
+    left:130px;
+ }
+
+ .bikePedals-Road--Road {
+    top: 130px;
+    left:138px;
+ }
+
+ .bikePedals-Road--Tri {
+    top:185px;
+    left:142px;
+ }
+//  Road PEDALS POSITIONS ENDS
+
+//  Tri PEDALS POSITIONS STARTS
+.bikePedals-Tri {
+    background-position: 379px 0px;
+    position: absolute;
+    height: 49px;
+    width: 29px;
+    z-index: 6;
+}
+
+ .bikePedals-Tri--eBike {
+    top: 185px;
+    left: 156px;
+ }
+
+ .bikePedals-Tri--wagon {
+    top:187px;
+    left:177px;
+ }
+
+ .bikePedals-Tri--loRider {
+    top:165px;
+    left:138px;
+ }
+
+ .bikePedals-Tri--Road {
+    top: 187px;
+    left:145px;
+ }
+
+ .bikePedals-Tri--Tri {
+    top: 190px; 
+    left:150px;
+ }
+//  Road PEDALS POSITIONS ENDS

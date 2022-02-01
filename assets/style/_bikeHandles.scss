@@ -1,0 +1,177 @@
+.bikeHandles {
+    display: inline-block;
+    background-image: url('../img/bikeHandlesSprite.svg');
+ }
+
+ //  eBIKE HANDLES POSITIONS STARTS
+ 
+ .bikeHandles-eBike {
+    background-position: 37px 0px;
+    position: absolute;
+    height: 76px;
+    width: 34px;
+    z-index:-6;
+}
+ .bikeHandles-eBike--eBike {
+    top: 0;
+    left: 227px;
+ }
+
+ .bikeHandles-eBike--wagon {
+    top: 22px;
+    left: 241px;
+ }
+
+ .bikeHandles-eBike--loRider {
+    top: 10px;
+    left: 235px;
+ }
+
+ .bikeHandles-eBike--Road {
+    top: 0;
+    left: 226px;
+ }
+
+ .bikeHandles-eBike--Tri {
+    top:20px;
+    left:241px;
+ }
+//  eBIKE HANDLES POSITIONS ENDS
+
+//  Wagon HANDLES POSITIONS STARTS
+.bikeHandles-wagon {
+    background-position: 110px 0px;
+    position: absolute;
+    height: 75px;
+    width: 55px;
+    z-index: -6;
+}
+ .bikeHandles-wagon--eBike {
+    top:5px;
+    left:203px;
+ }
+
+ .bikeHandles-wagon--wagon {
+    top:25px;
+    left:217px;
+ }
+
+ .bikeHandles-wagon--loRider {
+    top:15px;
+    left:212px;
+ }
+
+ .bikeHandles-wagon--Road {
+    top: 5px;
+    left: 203px;
+ }
+
+ .bikeHandles-wagon--Tri {
+    top: 20px;
+    left: 214px;
+ }
+//  Wagon HANDLES POSITIONS ENDS
+
+//  loRider HANDLES POSITIONS STARTS
+.bikeHandles-loRider {
+    background-position: 179px 0px;
+    position: absolute;
+    height: 75px;
+    width: 48px;
+    z-index: -6;
+}
+ .bikeHandles-loRider--eBike {
+    top: 0px;
+    left: 213px;
+ }
+
+ .bikeHandles-loRider--wagon {
+    top: 22px;
+    left: 2228px;
+ }
+
+ .bikeHandles-loRider--loRider {
+    top:11px;
+    left:222px;
+ }
+
+ .bikeHandles-loRider--Road {
+    top: 0;
+    left: 213px;
+ }
+
+ .bikeHandles-loRider--Tri {
+    top: 20px;
+    left: 228px;
+ }
+//  LoRider HANDLES POSITIONS ENDS
+
+//  loRider HANDLES POSITIONS STARTS
+.bikeHandles-Road {
+    background-position: 288px 51px;
+    position: absolute;
+    height: 50px;
+    width: 85px;
+    z-index: -6;
+}
+
+ .bikeHandles-Road--eBike {
+    top: 50px;
+    left: 230px;
+ }
+
+ .bikeHandles-Road--wagon {
+    top:69px;
+    left:245px;
+ }
+
+ .bikeHandles-Road--loRider {
+    top: 59px;
+    left:1239px;
+ }
+
+ .bikeHandles-Road--Road {
+    top: 48px;
+    left: 230px;
+ }
+
+ .bikeHandles-Road--Tri {
+    top:66px;
+    left:243px;
+ }
+//  Road HANDLES POSITIONS ENDS
+
+//  Tri HANDLES POSITIONS STARTS
+.bikeHandles-Tri {
+    background-position: 420px 0px;
+    position: absolute;
+    height: 75px;
+    width: 115px;
+    z-index: 6;
+}
+
+ .bikeHandles-Tri--eBike {
+    top: 17px;
+    left: 206px;
+ }
+
+ .bikeHandles-Tri--wagon {
+    top:40px;
+    left:221px;
+ }
+
+ .bikeHandles-Tri--loRider {
+    top:30px;
+    left:221px;
+ }
+
+ .bikeHandles-Tri--Road {
+    top: 16px;
+    left: 206px;
+ }
+
+ .bikeHandles-Tri--Tri {
+    top: 34px; 
+    left: 209px;
+ }
+//  Road HANDLES POSITIONS ENDS

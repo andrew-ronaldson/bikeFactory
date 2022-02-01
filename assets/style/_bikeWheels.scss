@@ -1,0 +1,75 @@
+// EBIKE WHEEL POSITION STARTS
+.bikeWheels {
+    display: inline-block;
+    background-image: url('../img/bikeWheelsSprite.svg');
+}
+    
+.bikeWheels-eBike {
+    background-position: 149px 0px;
+    position: absolute;
+    height: 147px;
+    width: 147px;
+    z-index: 1;
+}
+
+.bikeWheels-eBikeRear--eBike {
+    top: 112px;
+    left: 4px;
+}
+
+.bikeWheels-eBikeFront--eBike {
+    top: 112px;
+    left: 214px;
+}
+
+.bikeWheels-eBikeRear--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 2px;
+}
+
+.bikeWheels-eBikeFront--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 224px;
+}
+
+.bikeWheels-eBikeRear--loRider {
+    transform: scale(.8, .8);
+    top: 120px;
+    left: -4px;
+}
+
+.bikeWheels-eBikeFront--loRider {
+    transform: scale(.8, .8);
+    top: 120px;
+    left: 221px;
+}
+
+.bikeWheels-eBikeRear--Road {
+    top: 112px;
+    left: 4px;
+}
+
+.bikeWheels-eBikeFront--Road {
+    top: 112px;
+    left: 214px;
+}
+
+.bikeWheels-eBikeRear--Tri {
+    top: 112px;
+    left: 4px;
+}
+
+.bikeWheels-eBikeFront--Tri {
+    top: 112px;
+    left: 214px;
+}
+
+
+
+
+
+// EBIKE WHEEL POSITION ENDS
+
+

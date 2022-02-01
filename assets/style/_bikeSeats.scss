@@ -1,0 +1,174 @@
+
+.bikeSeat {
+    display: inline-block;
+    background-image: url('../img/bikeSeatSprite.svg');
+}
+//  eBIKE SEAT POSITIONS STARTS
+.bikeSeat-eBike {
+    background-position: 60px 0px;
+    position: absolute;
+    height: 30px;
+    width: 60px;
+    z-index:1;
+}
+ .bikeSeat-eBike--eBike {
+    top:65px;
+    left:104px;
+ }
+
+ .bikeSeat-eBike--wagon {
+    top:74px;
+    left:125px;
+ }
+
+ .bikeSeat-eBike--loRider {
+    top:92px;
+    left:96px;
+ }
+
+ .bikeSeat-eBike--Road {
+    top:52px;
+    left:97px;
+ }
+
+ .bikeSeat-eBike--Tri {
+    top:24px;
+    left:95px;
+ }
+//  eBIKE SEAT POSITIONS ENDS
+
+//  Wagon SEAT POSITIONS STARTS
+.bikeSeat-wagon {
+    background-position: 123px 0px;
+    position: absolute;
+    height: 60px;
+    width: 63px;
+    z-index: 1;
+}
+ .bikeSeat-wagon--eBike {
+    top:31px;
+    left:95px;
+ }
+
+ .bikeSeat-wagon--wagon {
+    top:42px;
+    left:117px;
+ }
+
+ .bikeSeat-wagon--loRider {
+    top:60px;
+    left:88px;
+ }
+
+ .bikeSeat-wagon--Road {
+    top: 18px;
+    left:88px;
+ }
+
+ .bikeSeat-wagon--Tri {
+    top:-7px;
+    left:85px;
+ }
+//  Wagon SEAT POSITIONS ENDS
+
+//  loRider SEAT POSITIONS STARTS
+.bikeSeat-loRider {
+    background-position: 185px 0px;
+    position: absolute;
+    height: 60px;
+    width: 59px;
+    z-index: 4;
+}
+ .bikeSeat-loRider--eBike {
+    top: 58px;
+    left: 102px;
+ }
+
+ .bikeSeat-loRider--wagon {
+    top:68px;
+    left:123px;
+ }
+
+ .bikeSeat-loRider--loRider {
+    top:87px;
+    left:96px;
+ }
+
+ .bikeSeat-loRider--Road {
+    top: 45px;
+    left:95px;
+ }
+
+ .bikeSeat-loRider--Tri {
+    top:17px;
+    left:95px;
+ }
+//  LoRider SEAT POSITIONS ENDS
+
+//  loRider SEAT POSITIONS STARTS
+.bikeSeat-Road {
+    background-position: 249px 0px;
+    position: absolute;
+    height: 21px;
+    width: 60px;
+    z-index: 4;
+}
+ .bikeSeat-Road--eBike {
+    top: 82px;
+    left: 110px;
+ }
+
+ .bikeSeat-Road--wagon {
+    top:87px;
+    left:128px;
+ }
+
+ .bikeSeat-Road--loRider {
+    top:105px;
+    left:104px;
+ }
+
+ .bikeSeat-Road--Road {
+    top: 64px;
+    left:100px;
+ }
+
+ .bikeSeat-Road--Tri {
+    top:40px;
+    left:100px;
+ }
+//  Road SEAT POSITIONS ENDS
+
+//  Tri SEAT POSITIONS STARTS
+.bikeSeat-Tri {
+    background-position: 310px 0px;
+    position: absolute;
+    height: 16px;
+    width: 56px;
+    z-index: 4;
+}
+ .bikeSeat-Tri--eBike {
+    top: 80px;
+    left: 110px;
+ }
+
+ .bikeSeat-Tri--wagon {
+    top:90px;
+    left:130px;
+ }
+
+ .bikeSeat-Tri--loRider {
+    top:107px;
+    left:104px;
+ }
+
+ .bikeSeat-Tri--Road {
+    top: 10px;
+    left:65px;
+ }
+
+ .bikeSeat-Tri--Tri {
+    top:40px;
+    left:98px;
+ }
+//  Road SEAT POSITIONS ENDS
