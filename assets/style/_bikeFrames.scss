@@ -1,0 +1,65 @@
+// BIKE FRAME CODE STARTS
+.bikeFrame {
+  display: inline-block;
+  background-image: url('../img/bikeFramesSprite.svg');
+}
+.bikeFrameRed {
+  fill:#EE0000
+}
+.bikeFrameNavy {
+  fill:#27579A
+}
+.bikeFrameOrange {
+  fill:#FAAA4F
+}
+.bikeFrameBlue {
+  fill:#AEDCDD
+}
+
+.bikeFrame-eBike {
+  background-position: 360px 0px;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 280px;
+  width:360px;
+  z-index: 2;
+}
+.bikeFrame-wagon {
+  background-position: 720px 0px;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 280px;
+  width:360px;
+  z-index: 2;
+}
+.bikeFrame-loRider {
+  background-position: 1080px 0px;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 280px;
+  width:360px;
+  z-index: 2;
+}
+.bikeFrame-Road {
+  background-position: 1440px 0px;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 280px;
+  width:360px;
+  z-index: 2;
+}
+.bikeFrame-Tri {
+  background-position: 1800px 0px;
+  position: absolute;
+  top:0;
+  left:0;
+  height: 280px;
+  width: 360px;
+  z-index: 2;
+}
+
+// BIKE FRAME CODE ENDS

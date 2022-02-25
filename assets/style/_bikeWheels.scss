@@ -1,8 +1,10 @@
-// EBIKE WHEEL POSITION STARTS
 .bikeWheels {
     display: inline-block;
     background-image: url('../img/bikeWheelsSprite.svg');
+
 }
+
+// EBIKE WHEEL POSITION STARTS
     
 .bikeWheels-eBike {
     background-position: 149px 0px;
@@ -52,24 +54,275 @@
 }
 
 .bikeWheels-eBikeFront--Road {
-    top: 112px;
+    top: 117px;
     left: 214px;
 }
 
 .bikeWheels-eBikeRear--Tri {
+    transform: scale(.9, .9);
+    top: 117px;
+    left: 0px;
+}
+
+.bikeWheels-eBikeFront--Tri {
+    transform: scale(.9, .9);
+    top: 117px;
+    left: 213px;
+}
+// EBIKE WHEEL POSITION ENDS
+
+// WAGON WHEEL POSITION STARTS
+    
+.bikeWheels-wagon {
+    background-position: 276px 0px;
+    position: absolute;
+    height: 122px;
+    width: 122px;
+    z-index: 1;
+}
+
+.bikeWheels-wagonRear--eBike {
+    top: 124px;
+    left: 15px;
+}
+
+.bikeWheels-wagonFront--eBike {
+    top: 124px;
+    left: 225px;
+}
+
+.bikeWheels-wagonRear--wagon {
+    top: 140px;
+    left: 15px;
+}
+
+.bikeWheels-wagonFront--wagon {
+    top: 140px;
+    left: 237px;
+}
+
+.bikeWheels-wagonRear--loRider {
+    top: 132px;
+    left: 5px;
+}
+
+.bikeWheels-wagonFront--loRider {
+    top: 132px;
+    left: 233px;
+}
+
+.bikeWheels-wagonRear--Road {
+    top: 128px;
+    left: 10px;
+}
+
+.bikeWheels-wagonFront--Road {
+    top: 128px;
+    left: 225px;
+}
+
+.bikeWheels-wagonRear--Tri {
+    top: 128px;
+    left: 10px;
+}
+
+.bikeWheels-wagonFront--Tri {
+    top: 128px;
+    left: 224px;
+}
+// WAGON WHEEL POSITION ENDS
+
+// LORIDER WHEEL POSITION STARTS
+    
+.bikeWheels-loRider {
+    background-position: 406px 0px;
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    z-index: 1;
+}
+
+.bikeWheels-loRiderRear--eBike {
+    top: 120px;
+    left: 13px;
+}
+
+.bikeWheels-loRiderFront--eBike {
+    top: 120px;
+    left: 222px;
+}
+
+.bikeWheels-loRiderRear--wagon {
+    transform: scale(.8, .8);
+    top: 137px;
+    left: 8px;
+}
+
+.bikeWheels-loRiderFront--wagon {
+    transform: scale(.8, .8);
+    top: 137px;
+    left: 234px;
+}
+
+.bikeWheels-loRiderRear--loRider {
+    top: 130px;
+    left: 0px;
+}
+
+.bikeWheels-loRiderFront--loRider {
+    top: 130px;
+    left: 227px;
+}
+
+.bikeWheels-loRiderRear--Road {
+    top: 125px;
+    left: 7px;
+}
+
+.bikeWheels-loRiderFront--Road {
+    top: 125px;
+    left: 220px;
+}
+
+.bikeWheels-loRiderRear--Tri {
+    top: 125px;
+    left: 8px;
+}
+
+.bikeWheels-loRiderFront--Tri {
+    top: 125px;
+    left: 220px;
+}
+// LORIDER WHEEL POSITION ENDS
+
+// ROAD WHEEL POSITION STARTS
+    
+.bikeWheels-Road {
+    background-position: 553px 0px;
+    position: absolute;
+    height: 145px;
+    width: 145px;
+    z-index: 1;
+}
+
+.bikeWheels-RoadRear--eBike {
+    top: 110px;
+    left: 4px;
+}
+
+.bikeWheels-RoadFront--eBike {
+    top: 110px;
+    left: 216px;
+}
+
+.bikeWheels-RoadRear--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 5px;
+}
+
+.bikeWheels-RoadFront--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 228px;
+}
+
+.bikeWheels-RoadRear--loRider {
+    transform: scale(.9, .9);
+    top: 119px;
+    left: -4px;
+}
+
+.bikeWheels-RoadFront--loRider {
+    transform: scale(.9, .9);
+    top: 119px;
+    left: 224px;
+}
+
+.bikeWheels-RoadRear--Road {
+    top: 115px;
+    left: 3px;
+}
+
+.bikeWheels-RoadFront--Road {
+    top: 115px;
+    left: 214px;
+}
+
+.bikeWheels-RoadRear--Tri {
+    transform: scale(.9, .9);
+    top: 116px;
+    left: 2px;
+}
+
+.bikeWheels-RoadFront--Tri {
+    transform: scale(.9, .9);
+    top: 116px;
+    left: 214px;
+}
+// ROAD WHEEL POSITION ENDS
+
+// TRI WHEEL POSITION STARTS
+    
+.bikeWheels-Tri {
+    background-position: 0 0px;
+    position: absolute;
+    height: 143px;
+    width: 143px;
+    z-index: 1;
+}
+
+.bikeWheels-TriRear--eBike {
     top: 112px;
     left: 4px;
 }
 
-.bikeWheels-eBikeFront--Tri {
+.bikeWheels-TriFront--eBike {
     top: 112px;
+    left: 215px;
+}
+
+.bikeWheels-TriRear--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 3px;
+}
+
+.bikeWheels-TriFront--wagon {
+    transform: scale(.8, .8);
+    top: 126px;
+    left: 227px;
+}
+
+.bikeWheels-TriRear--loRider {
+    transform: scale(.9, .9);
+    top: 120px;
+    left: -4px;
+}
+
+.bikeWheels-TriFront--loRider {
+    transform: scale(.9, .9);
+    top: 120px;
+    left: 222px;
+}
+
+.bikeWheels-TriRear--Road {
+    top: 115px;
+    left: 4px;
+}
+
+.bikeWheels-TriFront--Road {
+        top: 115px;
     left: 214px;
 }
 
+.bikeWheels-TriRear--Tri {
+    top: 116px;
+    left: 0px;
+}
 
-
-
-
-// EBIKE WHEEL POSITION ENDS
-
-
+.bikeWheels-TriFront--Tri {
+    top: 116px;
+    left: 213px;
+}
+// TRI WHEEL POSITION ENDS

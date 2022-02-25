@@ -1,11 +1,14 @@
+* {
+    box-sizing: border-box;
+  }
+
 /* color variables */
 
-
-
 $primary-color: #4CB6D6;
-$secondary-color: #43ADAF;
-$tertiary-color: #5B080E;
+$secondary-color: #0499c5;
+$tertiary-color: #79c4c6;
 $light-color: #ffffff;
+$dark-color: #142C4D;
 $btn-color: #FAAA4F;
     
 /* text	variables */
@@ -23,335 +26,284 @@ $btn-color: #FAAA4F;
     src: local('Repo ExtraBlack'), url('Repo-ExtraBlack.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Repo Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Repo Medium'), url('Repo-Medium.woff') format('woff');
+    }
+
 $bike-font: Repo ExtraBold, sans-serif;
 $hero-text: Repo ExtraBlack, sans-serif;
+$body-text: 'Repo Medium', sans-serif;
 $h1-text: 2.2rem;
-$h2-text: 1.6rem;
-$h3-text: 1.4rem;
-$h4-text: 18px;
+$h2-text: 1.4rem;
+$h3-text: 1rem;
+$h4-text: .9rem;
 
+.bikeFont {
+    font-family: $bike-font !important;
+    color: $light-color;
+    text-shadow: 1px 1px 1px $secondary-color;}
+
+.h2-text {
+    font-size: $h2-text;
+    text-align: center;
+    margin:.25rem auto;
+}
+.h3-text {
+    font-size: $h4-text;
+    text-align: center;
+    margin:0 auto .5rem;
+}
+
+
+/* Main content */
 
 body {
-margin:0;
-padding:0;
-background-color: $primary-color;
-font-family: $bike-font;
-font-size: 16px;
-
-
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(45deg, $tertiary-color, $secondary-color, $tertiary-color);
+    font-family: $bike-font;
+    font-size: 16px;
 }
 #game-wrapper {
-min-width: 375px;
-max-width: 600px;
-// padding:1rem;
-margin:0 auto;
-border:1px solid #5B080E;
-display: block;
-}
-.header-area {
-color: $light-color;
-display: block;
-position: relative;
-margin-top:.5rem;
-padding:0 .5rem;
-min-width:300px;
-max-width:600px;
-h2 {
-    text-align: center;
-    margin:.25rem;
-    font-size: $h3-text;
-}
-}
-.header-area-info{
-display: grid;
-grid-template-columns: 1fr max-content;
-width:100%;
-
-p {
-  font-size:14px;
-  font-family: $bike-font;
-  
-}   
-}
-.text-highlight {
-font-size:20px;
-letter-spacing: 1.25px;
-}
-.main-area {
-margin:1rem;
-padding:0;
-display: block;
-border: 1px solid $btn-color;
-}
-.main-area--bike {
-width:80%;
-height:auto;
-margin:0 auto;
-padding:10px;
-text-align: center;
-img {
-    width:100%;
-}
-}
-
-.main-area--parts {
-h2{
-    text-align: center;
-    color: $light-color;
-    margin:0 0 1rem 0;
-    text-shadow: 1px 1px 1px #FF0000;
-}    
-}
-.bike-part-carousel {
-display: block;
-
-li {
-    display: inline-block;
-    width:100px;
-    height:100px; 
-    background: $btn-color;
-    padding:0;
-    margin:0;
-}
-}
-.main-btn {
-background:$btn-color;
-font-family:$bike-font;
-border-radius: 20rem;
-padding:.5rem 2rem;
-color:$light-color;
-text-decoration: none;
-font-size: $h2-text;
-}
-
-.footer-area-wrapper {
-// position: fixed;
-// bottom:0;
-// left:0;
-height: auto;
-width:100%;
-background: $tertiary-color;
-display: grid;
-grid-template-columns: max-content 1fr;
-align-items: center;
-text-align: right;
-
-}
-
-.footer-area--timer {
-display:block;
-padding:1rem;
-margin:1rem;
-border-radius: 20rem;
-border:4px solid $light-color;
-background: $secondary-color;
-font-size: $h1-text;
-color: $light-color;
-}
-
-.footer-area--next {
-    margin:1rem;
-}
-
-#wrapper {
+    background-image: url('../img/spotlight.svg');
+    background-repeat:no-repeat!important;
+    background-size: contain;
+    min-width: 320px;
+    max-width: 600px;
+    height:100vh;
+    margin:0 auto;
+    padding:0 .5rem;
+    display: block;
     position: relative;
-    margin: 50px auto;
-    width:360px;
-    height:300px;
+    border: black solid 1px;
 }
 
-@media screen and (min-width: 400px) {
-    #wrapper {
+.main-btn {
+    font-family:$bike-font;
+    padding:.5rem 2rem;
+    color:$light-color;
+    text-decoration: none;
+    font-size: $h2-text;
+    text-transform: uppercase;
+}
+
+.main-btn-footer {
+    display: inline-block;
+    background-image: url('../img/next-button.svg');
+    background-repeat: no-repeat !important;
+    width:210px;
+    height:50px;
+    text-align: center;
+    padding:.5rem;
+    margin:0 1rem 1rem 0;
+// 
+    }
+
+.header-area {
+    display: block;
+    position: relative;
+    margin-top:.5rem;     
+}
+.headerUser {
+    font-size:$h2-text;
+}
+
+.headerPoints {
+    font-size:$h3-text;
+}
+
+.progress {
+    fill:#cecece;
+    stroke:#fff;
+    stroke-width:2.1995;
+    stroke-miterlimit:10
+}
+
+.progressDone {
+    fill:#52bdd7;
+    stroke:#9ad5e5;
+    stroke-width:2.1995;
+    stroke-miterlimit:10
+}
+
+.text-area {
+    fill: none;
+}
+
+
+.bike-parts-wrapper {
+    h2{
+        text-align: center;
+        color: $light-color;
+        margin:0 0 .25rem 0;
+        text-shadow: 2px 2px 2px $secondary-color;
+    }    
+}
+
+.bikePart-carousel {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+
+    li {
+        display: inline-block;
+        margin:.5rem;
+        width: 90px;
+        height: 90px;
+     }
+}
+
+#bike-assembly-wrapper {
+    position: relative;
+    margin: 5px auto;
+    width:360px;
+    height:260px;
+}
+
+@media screen and (min-width: 340px) and (max-width: 390px) {
+    #bike-assembly-wrapper {
         position: relative;
-        margin: 50px auto;
-        width:390px;
-        height:300px;
+        margin: -20px auto 10px ;
+        transform: scale(.9, .9);
     }
 }
 
-
-// BIKE FRAME CODE STARTS
-.bikeFrame {
-display: inline-block;
-background-image: url('../img/bikeFramesSprite.svg');
+@media screen and (min-width: 300px) and (max-width: 339px) {
+    #bike-assembly-wrapper {
+        position: relative;
+        margin: -30px 0 0 -20px;
+        transform: scale(0.70, 0.7);
+        text-align: center;
+        width: 320px;
+        height: 220px;
+    }
 }
 
-.bikeFrame-eBike {
-background-position: 360px 0px;
-position: absolute;
-top:0;
-left:0;
-height: 280px;
-width:360px;
-z-index: 2;
+#bikePrinter {
+    
 }
-.bikeFrame-wagon {
-background-position: 720px 0px;
-position: absolute;
-top:0;
-left:0;
-height: 280px;
-width:360px;
-z-index: 2;
-}
-.bikeFrame-loRider {
-background-position: 1080px 0px;
-position: absolute;
-top:0;
-left:0;
-height: 280px;
-width:360px;
-z-index: 2;
-}
-.bikeFrame-Road {
-background-position: 1440px 0px;
-position: absolute;
-top:0;
-left:0;
-height: 280px;
-width:360px;
-z-index: 2;
-}
-.bikeFrame-Tri {
-background-position: 1800px 0px;
-position: absolute;
-top:0;
-left:0;
-height: 280px;
-width: 360px;
-z-index: 2;
-}
-@media screen and (min-width: 400px) {
-.bikeFrame {
-    display: inline-block;
-    background-image: url('../img/bikeFramesXLSprite.svg');
- }
+// BIKE ASSEMBLY IMPORTS START
+    // BIKE FRAMES IMPORT 
+    @import "bikeFrames.scss";
 
-.bikeFrame-eBike {
-    background-position: 410px 0px;
+    // BIKE SEAT IMPORT 
+    @import "bikeSeats.scss";
+
+    // BIKE HANDLES IMPORT 
+    @import "bikeHandles.scss";
+
+    // BIKE PEDALS IMPORT 
+    @import "bikePedals.scss";
+
+    // BIKE WHEELS IMPORT 
+    @import "bikeWheels.scss";
+
+// BIKE ASSEMBLY IMPORTS END
+
+
+.footer-area-wrapper {
+    background-image: url('../img/footer-background.svg');
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat !important;
     position: absolute;
-    top:0;
+    bottom:0;
     left:0;
-    height: 183px;
-    width:400px;
-    z-index: 2;
+    height: 100px;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
 }
-.bikeFrame-wagon {
-    background-position: 780px 0;
+   
+@media screen and (min-width: 420px) {
+    .footer-area-wrapper {
+        background-size: cover ;
+    }
+}
+    
+.footer-area--timer {
+    display:block;
+    background-image: url('../img/timer-background.svg');
+    height:70px;
+    width:70px;
+    margin:0 0 .5rem 1rem;
+    color:$light-color;
+    font-size: $h1-text;
+    text-align: center;
+    padding-top:10px;
+
+}
+@media screen and (max-width: 374px) {
+    .footer-area--timer {
+        height:60px;
+        width:60px;
+        font-size: $h2-text;
+    }
+}
+
+.timer-text {
+    font-family:$hero-text;
+    font-size: $h2-text;
+    color: $light-color;
+    text-shadow: 2px 2px 2px #0499c5;
+}
+
+.footer-area--next {
+    margin:0;
+}  
+
+#footer-wrapper {
     position: absolute;
-    top:0;
+    bottom:0;
     left:0;
-    height: 192px;
-    width:390px;
-    z-index: 2;
+    margin:0;
+    width:100%;
+    padding:0 .5rem;
+    vertical-align: bottom;
 }
-.bikeFrame-loRider {
-    background-position: 1070px 0px;
+
+#ticket {
+    background-image: url("../img/ticket.svg");
+    background-size: contain;
+    background-repeat: repeat-y;
     position: absolute;
-    top:0;
-    left:0;
-    height: 183px;
-    width:390px;
-    z-index: 2;
+    top: 120px;
+    left: 7vw;
+    width: 240px;
+    height: auto;
+    display: block;
+    z-index: 18;
+    padding: 0.5rem 2rem;
 }
-.bikeFrame-Road {
-    background-position: 1440px 0px;
-    position: absolute;
-    top:0;
-    left:0;
-    height: 183px;
-    width:360px;
-    z-index: 2;
-}
-.bikeFrame-Tri {
-    background-position: 1800px 0px;
-    position: absolute;
-    top:0;
-    left:0;
-    height: 183px;
-    width:360px;
-    z-index: 2;
-}   
-}
-// BIKE FRAME CODE ENDS
-
-// BIKE SEAT IMPORT 
-@import "bikeSeats.scss";
-
-// BIKE HANDLES IMPORT 
-@import "bikeHandles.scss";
-
-// BIKE PEDALS IMPORT 
-@import "bikePedals.scss";
-
-// BIKE WHEELS IMPORT 
-@import "bikeWheels.scss";
-
-
-
-.bikeWheels--wagon {
-background-position: 720px 0px;
-position: absolute;
-top:-15px;
-left:0;
-height: 280px;
-width:360px;
-z-index:1;
-transform: scale(.9, .9);
-}
-.bikeWheels--loRider {
-background-position: 1080px 0px;
-position: absolute;
-top:-5px;
-left:0;
-height: 280px;
-width:360px;
-z-index:1;
+#ticket h2 {
+    font-size: 16px;
+    border-bottom: 0.5px black solid;
 }
 
-
-.bikeHandles {
-display: inline-block;
-background-image: url('../img/bikeHandlesSprite.svg');
-}
-.bikeHandles--eBike {
-background-position: 37px 0px;
-position: absolute;
-top: 0;
-left: 227px;
-height: 75px;
-width: 33px;
-z-index: 0;
+#ticket h3 {
+    font-size: 14px;
+    border-bottom: 0.5px black solid;
 }
 
-.eBikeBuild {
-background-image: url('../img/eBikeSm.svg');
-width: 350px;
-height:350px;
-margin:0 auto;
+.ticket-info {
+    margin: 0;
+    padding: 0;
 }
 
-.handles {
-display: inline-block;
-background-image: url('../img/bikeHandles.svg');
-}
-.handles--eBike {
-background-position: 130px 2px;
-position: absolute;
-width: 48px;
-height: 59px;
-top: 50px;
-left: 144px;
-z-index: 20;
-}
-
-.handles--triBike {
-background-position: 291px 2px;
-position: absolute;
-width: 158px;
-height: 83px;
-top: 100px;
-left: 125px;
-z-index: 20;
+.ticket-item {
+    font-family: "Repo Medium", sans-serif;
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 0.5px #333333 solid;
 }
 

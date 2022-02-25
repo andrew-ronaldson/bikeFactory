@@ -1,6 +1,7 @@
 .bikeHandles {
     display: inline-block;
     background-image: url('../img/bikeHandlesSprite.svg');
+    
  }
 
  //  eBIKE HANDLES POSITIONS STARTS
@@ -78,7 +79,7 @@
     position: absolute;
     height: 75px;
     width: 48px;
-    z-index: -6;
+    z-index: -2;
 }
  .bikeHandles-loRider--eBike {
     top: 0px;
