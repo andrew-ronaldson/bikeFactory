@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
+    
   }
+  svg { height: auto !important; }
 
 /* color variables */
 
@@ -66,6 +68,7 @@ body {
     background-image: linear-gradient(45deg, $tertiary-color, $secondary-color, $tertiary-color);
     font-family: $bike-font;
     font-size: 16px;
+    height:100vh;
 }
 #game-wrapper {
     background-image: url('../img/spotlight.svg');
@@ -107,6 +110,97 @@ body {
     position: relative;
     margin-top:.5rem;     
 }
+
+#grid-wrapper {
+    display: grid;
+    grid-template-rows: 150px 1fr ;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    justify-content: space-between;
+    height:100vh;
+}
+
+.header-block {
+    background-image: url(../img/header-block.svg);
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-size:contain;
+    width:100%;
+    height:auto;
+    text-align: center;
+    color: $light-color;
+    margin:.5rem auto;
+
+    h2 {
+        font-size: $h2-text;
+        line-height: 1rem;
+        padding:2rem 0 0 0;
+        margin:0;
+        text-shadow: 1px 1px 1px $dark-color;
+    }
+
+    h3 {
+        font-size: $h4-text;
+        line-height: .75rem;
+        text-shadow: 1px 1px 1px $dark-color;
+    }
+}
+.sensorTest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:1rem;
+    gap:1rem;
+    
+}
+
+.sensorButtons {
+    display: flex;
+    border: $light-color 2px solid;
+    border-radius: 20px;
+    padding:2rem;
+    color: $light-color;
+    width:100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    &:visited {
+        text-decoration:none;
+        color:$light-color;
+    }
+
+
+}
+// .sensorTest {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 1rem;
+//     text-align: center;
+
+
+
+
+// }
+
+// .sensorButtons {
+//     display: inline-block;
+//     border: $light-color 2px solid;
+//     padding:2rem;
+//     color: $light-color;
+//     margin:.5rem;
+//     width:42vw;
+//     height: 200px;
+//     align-items: center;
+//     text-align: center;
+
+// }
+
+
+
+
 .headerUser {
     font-size:$h2-text;
 }
@@ -186,9 +280,73 @@ body {
     }
 }
 
+// #bikePrinter {
+//    background-image: url(../img/printScreen.svg);
+//    background-repeat: no-repeat !important;
+//    background-size: contain;
+//    width: 100%;
+//    height:600px;
+//    position: relative;
+//    margin: 1rem auto;
+//    padding:0;
+// }
+
+// .printArm {
+//     background-image: url(../img/printArm.svg);
+//     background-repeat: no-repeat !important;
+//     // background-size: contain;
+//     background-position: 360px 0px;
+//     position: absolute;
+//     width: 60px;
+//     height:460px;
+//     top:0;
+//     left:100px;
+// }
+// .printHead {
+//     background-image: url(../img/printHead.svg);
+//     background-repeat: no-repeat !important;
+//     position: absolute;
+//     width: 360px;
+//     height:460px;
+//     top:20px;
+//     left:100px;
+// }
+
 #bikePrinter {
-    
+    display: block;
+    width: 100%;
+    height:auto;
+    position: relative;
+    margin: 1rem auto;
+    padding:0;
+    overflow: hidden;
 }
+.armMoves {
+    // transform:translate(1, 6);
+    transform: rotate(90);
+}
+.printArm {
+    display: inline-block;
+    background-image: url(../img/printArm.svg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 100px;
+    height:560px;
+    top:0px;
+    left:80px;
+}
+.printHead {
+    background-image: url(../img/printHead.svg);
+    background-position: 290px 0 ;
+    background-size: cover;
+    position: absolute;
+    width: 120px;
+    height: 560px;
+    top:200px;
+    left:60px;
+}
+
 // BIKE ASSEMBLY IMPORTS START
     // BIKE FRAMES IMPORT 
     @import "bikeFrames.scss";
@@ -307,3 +465,4 @@ body {
     border-bottom: 0.5px #333333 solid;
 }
 
+@import "pauseScreen.scss";

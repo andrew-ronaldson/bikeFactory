@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+svg {
+  height: auto !important;
+}
+
 /* color variables */
 /* text	variables */
 @font-face {
@@ -47,6 +51,7 @@ body {
   background-image: linear-gradient(45deg, #79c4c6, #0499c5, #79c4c6);
   font-family: Repo ExtraBold, sans-serif;
   font-size: 16px;
+  height: 100vh;
 }
 
 #game-wrapper {
@@ -87,6 +92,65 @@ body {
   display: block;
   position: relative;
   margin-top: 0.5rem;
+}
+
+#grid-wrapper {
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header-block {
+  background-image: url(../img/header-block.svg);
+  background-repeat: no-repeat !important;
+  background-position: top center;
+  background-size: contain;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #ffffff;
+  margin: 0.5rem auto;
+}
+.header-block h2 {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  padding: 2rem 0 0 0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #142C4D;
+}
+.header-block h3 {
+  font-size: 0.9rem;
+  line-height: 0.75rem;
+  text-shadow: 1px 1px 1px #142C4D;
+}
+
+.sensorTest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.sensorButtons {
+  display: flex;
+  border: #ffffff 2px solid;
+  border-radius: 20px;
+  padding: 2rem;
+  color: #ffffff;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.sensorButtons:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .headerUser {
@@ -161,6 +225,43 @@ body {
     height: 220px;
   }
 }
+#bikePrinter {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 1rem auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.armMoves {
+  transform: rotate(90);
+}
+
+.printArm {
+  display: inline-block;
+  background-image: url(../img/printArm.svg);
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100px;
+  height: 560px;
+  top: 0px;
+  left: 80px;
+}
+
+.printHead {
+  background-image: url(../img/printHead.svg);
+  background-position: 290px 0;
+  background-size: cover;
+  position: absolute;
+  width: 120px;
+  height: 560px;
+  top: 200px;
+  left: 60px;
+}
+
 .bikeFrame {
   display: inline-block;
   background-image: url("../img/bikeFramesSprite.svg");
@@ -1151,6 +1252,14 @@ body {
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 0.5px #333333 solid;
+}
+
+#pauseScreen {
+  display: grid;
+  grid-template-rows: repeat(1fr);
+  align-items: center;
+  padding: 1rem;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=summit-22-style.css.map */

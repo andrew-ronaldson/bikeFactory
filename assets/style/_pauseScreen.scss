@@ -1,0 +1,7 @@
+#pauseScreen {
+    display: grid;
+    grid-template-rows: repeat(1fr);
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+}
